@@ -13,4 +13,4 @@ jobs:
       - name: Print greeting # name of the step
         run: echo "Greeting" # define the command that should be executed
       - name: Print goodbye # name of the next step in the job
-        run: echo "Goodbye
+        run: echo "Goodbye"
