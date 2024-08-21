@@ -1,0 +1,16 @@
+# The name of the workflow
+name: Initial-Workflow
+
+# When to activate this workflow
+on: workflow_dispatch # upon manually run the workflow
+
+# Define the jobs
+jobs:
+  first-job: # the name of the first job
+    runs-on: ubuntu-latest # we need to define the runner (agent) for this job
+    steps:
+      # list of steps
+      - name: Print greeting # name of the step
+        run: echo "Greeting" # define the command that should be executed
+      - name: Print goodbye # name of the next step in the job
+        run: echo "Goodbye
