@@ -1,5 +1,5 @@
 name: Deploy Project
-on: push # push event
+on: [push, workflow_dispatch] 
 
 jobs:
   test: # first job
