@@ -1,0 +1,11 @@
+name: Output info
+on: workflow_dispatch
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+    # i wanna output some meta info that is automatically passed into these jobs and steps
+    # this meta info is called context
+      - name: Output Github context
+        run: echo "${{ toJSON(github) }}"
