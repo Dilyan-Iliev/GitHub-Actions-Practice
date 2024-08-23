@@ -1,13 +1,17 @@
 name: Matrix Demo
-on: push
+on: workflow_dispatch
 
 jobs:
   build:
+    continue-on-error: true
     strategy:
       matrix: # run this job multiple times - one time per below value
         # keys by our choice
         node-version: [14, 18]
         operating-system: [ubuntu-latest, windows-latest]
+        include:
+          - node-version: 16
+          - operating-system: ubuntu-latest 
     runs-on: ${{ matrix.operating-system }}
     steps:
         - name: Get Code
