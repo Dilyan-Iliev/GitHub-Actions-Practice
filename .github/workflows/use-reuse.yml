@@ -73,6 +73,8 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/reusable.yml # provide the path to the reusable workflow
+    with: 
+      artifact-name: dist-files
         
   # run this job ONLY if some other job failed
   report:
