@@ -71,5 +71,7 @@ jobs:
   informatin:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v3
       - name: Get info
         uses: ./.github/custom-actions/deploy-s3-js
