@@ -12,6 +12,8 @@ jobs:
         # custom action
       - name: Load & Cache dependencies
         uses: ./.github/custom-actions/cached-dependencies # path to the custom action
+        with:
+          allow-caching: 'false'
       - name: Lint code
         run: npm run lint
 
