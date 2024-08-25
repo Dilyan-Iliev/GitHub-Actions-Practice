@@ -1,0 +1,6 @@
+# deployment to AWS
+name: 'Deploy to AWS S3'
+description: 'Deployment a static website via AWS S3'
+runs:
+  using: 'node16'
+  main: 'main.js' #js file that holds the action logic - the file will be executed in the workflow

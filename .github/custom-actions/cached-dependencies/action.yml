@@ -9,6 +9,7 @@ inputs:
     description: 'Allow users to cache dependencies or not'
     required: false # or true
     default: 'true'
+
 runs: # The runs section defines how the custom action is executed
     using: 'composite' # custom composite action
     steps:
